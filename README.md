@@ -1,85 +1,121 @@
 # QuantumShield AI
 
-## Project Vision
+## Overview
 
-QuantumShield AI 是一套結合人工智慧與後量子密碼學（Post-Quantum Cryptography, PQC）的資安分析平台。
+QuantumShield AI is a Post-Quantum Security Analysis Platform that combines Artificial Intelligence (AI), Cybersecurity Analysis, and Post-Quantum Cryptography (PQC).
 
-本專案希望協助使用者在量子運算時代來臨前，了解現有密碼系統可能面臨的風險，並提供安全評估與遷移建議。
+The project aims to help developers, security professionals, and researchers understand potential cryptographic risks caused by future quantum computing threats and prepare for the transition toward quantum-resistant cryptography.
 
 ---
 
-## Problem Statement
+## Motivation
 
-目前許多系統仍使用 RSA、ECC 等傳統公開金鑰密碼學。
+Current digital systems widely rely on traditional public-key cryptographic algorithms such as RSA and ECC.
 
-雖然現階段仍具安全性，但未來量子電腦可能利用量子演算法破解部分密碼系統。
+Although these algorithms are considered secure today, future large-scale quantum computers may threaten their security through quantum algorithms such as Shor's algorithm.
 
-然而，多數使用者缺乏工具了解：
+However, many users and organizations lack:
 
-- 自己使用哪些密碼演算法
-- 是否存在量子威脅
-- 如何進行 PQC 遷移
+- Awareness of quantum computing threats
+- Visibility into their current cryptographic usage
+- Clear guidance for migrating to Post-Quantum Cryptography (PQC)
 
-因此建立此平台協助使用者進行分析與改善。
+QuantumShield AI aims to provide an understandable and practical platform to analyze cryptographic risks and provide improvement recommendations.
+
+---
+
+## Goals
+
+The main goals of QuantumShield AI are:
+
+- Identify cryptographic components vulnerable to future quantum attacks
+- Evaluate the security readiness of existing systems
+- Provide Post-Quantum Cryptography migration recommendations
+- Use AI to explain security risks and mitigation strategies
 
 ---
 
 ## Core Features
 
-### 1. Security Scanner
+### Security Scanner
 
-分析：
+Analyze security configurations and cryptographic components, including:
 
-- TLS
-- HTTP Security Header
-- Certificate
-- Cryptographic Algorithm
-
----
-
-### 2. Reverse Engineering Toolkit
-
-分析：
-
-- PE
-- ELF
-- Binary Structure
-- Cryptographic Usage
+- TLS configuration
+- Certificates
+- Cryptographic algorithms
+- Security headers
 
 ---
 
-### 3. PQC Analyzer
+### Reverse Engineering Toolkit
 
-提供：
+Analyze executable files and identify potential cryptographic usage.
 
-- Quantum Risk Assessment
-- PQC Migration Recommendation
-- NIST PQC Algorithm Information
+Planned features:
 
----
-
-### 4. AI Security Assistant
-
-協助：
-
-- 解釋分析結果
-- 提供改善建議
-- 回答 PQC 相關問題
+- PE/ELF analysis
+- Binary structure analysis
+- Cryptographic primitive detection
 
 ---
 
-## Architecture
+### PQC Analyzer
 
-Coming Soon
+Evaluate quantum-related cryptographic risks.
+
+Planned features:
+
+- Classical cryptography risk assessment
+- PQC algorithm recommendations
+- NIST PQC standard information
 
 ---
 
-## Roadmap
+### AI Security Assistant
 
-- [ ] Project Design
-- [ ] Backend Framework
+Provide AI-assisted security explanations.
+
+The AI assistant helps users:
+
+- Understand analysis results
+- Learn about quantum threats
+- Receive cryptographic migration suggestions
+
+---
+
+## System Architecture
+
+Coming soon.
+
+---
+
+## Development Roadmap
+
+- [x] Project vision and planning
+- [ ] Backend foundation
 - [ ] Security Scanner
-- [ ] Reverse Toolkit
-- [ ] PQC Module
-- [ ] AI Agent
+- [ ] Reverse Engineering Toolkit
+- [ ] PQC Analysis Module
+- [ ] AI Agent Integration
 - [ ] Cloud Deployment
+
+---
+
+## Technology Stack
+
+Planned technologies:
+
+- Python
+- FastAPI
+- Docker
+- PostgreSQL
+- Open Quantum Safe (liboqs)
+- AI Agent Framework
+- Oracle Cloud Infrastructure
+
+---
+
+## License
+
+MIT License
