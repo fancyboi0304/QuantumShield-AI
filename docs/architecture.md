@@ -32,6 +32,7 @@ The system should be able to run on common desktop computers and support future 
 
 ## 3. High-Level Architecture
 
+```text
 User
  |
  v
@@ -52,6 +53,8 @@ Crypto Scanner   PQC Analyzer   AI Security Agent
                   |
                   v
            Report Generator
+```
+---
 
 ## 4. Core Components
 
@@ -216,6 +219,7 @@ Additional formats such as PDF may be added later.
 
 The basic analysis workflow is:
 
+```text
 User
  |
  v
@@ -248,13 +252,14 @@ Report Generator   AI Agent
            |
            v
        User Interface
-
+```
 ---
 
 ## 6. MVP Architecture
 
 The first working version of QuantumShield AI will focus on a smaller architecture.
 
+```text
 User
  |
  v
@@ -275,6 +280,7 @@ Crypto Scanner    PQC Analyzer
            |
            v
          Report
+```
 
 The MVP should prioritize:
 
